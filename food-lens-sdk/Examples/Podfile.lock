@@ -1,0 +1,22 @@
+PODS:
+  - FoodLensSDK/Static (0.1.7):
+    - FoodLensSDKStatic
+  - FoodLensSDKStatic (0.1.7)
+
+DEPENDENCIES:
+  - FoodLensSDK/Static (from `../`)
+  - FoodLensSDKStatic (from `../`)
+
+EXTERNAL SOURCES:
+  FoodLensSDK:
+    :path: "../"
+  FoodLensSDKStatic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FoodLensSDK: b41cd79b1b6afec6c4e3c66e99537943c10c7ed4
+  FoodLensSDKStatic: 268369dbd8fc7f6e49b36e9207f3b19ecea085ed
+
+PODFILE CHECKSUM: daee9f1682da1e13766d52c08d16d6fe99a02f1c
+
+COCOAPODS: 1.9.1

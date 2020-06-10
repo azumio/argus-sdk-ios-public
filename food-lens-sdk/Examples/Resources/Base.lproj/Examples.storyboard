@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KKq-6p-Zd7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="LS5-nx-SDG">
+            <objects>
+                <viewController storyboardIdentifier="Result" id="IyQ-oN-A1O" customClass="ResultViewController" customModule="AICamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WOd-Mw-KF7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NgL-Qb-KxN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NgL-Qb-KxN" secondAttribute="bottom" id="Gd5-Oy-PQg"/>
+                            <constraint firstItem="NgL-Qb-KxN" firstAttribute="leading" secondItem="WOd-Mw-KF7" secondAttribute="leading" id="Tvz-RV-Ut1"/>
+                            <constraint firstAttribute="trailing" secondItem="NgL-Qb-KxN" secondAttribute="trailing" id="sAa-lI-YFl"/>
+                            <constraint firstItem="NgL-Qb-KxN" firstAttribute="top" secondItem="WOd-Mw-KF7" secondAttribute="top" id="yME-yX-YS6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="de8-gL-z66"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="NgL-Qb-KxN" id="nhq-qu-gnv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xn-TY-G0c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539" y="133"/>
+        </scene>
+        <!--Switchboard View Controller-->
+        <scene sceneID="2qC-KM-bG4">
+            <objects>
+                <viewController storyboardIdentifier="SwitchboardViewController" id="KKq-6p-Zd7" customClass="SwitchboardViewController" customModule="AICamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0sw-eS-tDS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FoodLensBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Csn-XX-hfy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oMF-to-bja">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0V5-CT-eaU">
+                                <rect key="frame" x="22" y="44" width="370" height="688"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SL-6F-awC">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="MjI-2g-F9m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="AI CAMERA"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="zzf-Gd-Ex3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-ns-Ymu">
+                                        <rect key="frame" x="0.0" y="176" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="mhc-XI-SOP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="HISTORY"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="nBs-0I-0tN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-Lo-091">
+                                        <rect key="frame" x="0.0" y="352" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="fFV-lP-Xv6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="SEARCH FOOD"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="pAv-Mm-tmJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyj-AG-lJZ">
+                                        <rect key="frame" x="0.0" y="528" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="s9p-pX-vBV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="RECOGNIZE FOOD"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="VDT-76-T5h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oMF-to-bja" firstAttribute="centerY" secondItem="0sw-eS-tDS" secondAttribute="centerY" id="CYh-ex-JKL"/>
+                            <constraint firstItem="qqL-yz-fVe" firstAttribute="trailing" secondItem="0V5-CT-eaU" secondAttribute="trailing" constant="22" id="Cvq-Vj-Hon"/>
+                            <constraint firstItem="Csn-XX-hfy" firstAttribute="leading" secondItem="0sw-eS-tDS" secondAttribute="leading" id="MBS-wu-y55"/>
+                            <constraint firstItem="Csn-XX-hfy" firstAttribute="top" secondItem="0sw-eS-tDS" secondAttribute="top" id="Qmc-Ic-SrU"/>
+                            <constraint firstItem="oMF-to-bja" firstAttribute="centerX" secondItem="0sw-eS-tDS" secondAttribute="centerX" id="k6I-xf-SLF"/>
+                            <constraint firstAttribute="trailing" secondItem="Csn-XX-hfy" secondAttribute="trailing" id="qfM-4h-JMY"/>
+                            <constraint firstItem="0V5-CT-eaU" firstAttribute="leading" secondItem="qqL-yz-fVe" secondAttribute="leading" constant="22" id="qpF-fS-hlc"/>
+                            <constraint firstAttribute="bottom" secondItem="Csn-XX-hfy" secondAttribute="bottom" id="syw-yJ-YYD"/>
+                            <constraint firstItem="0V5-CT-eaU" firstAttribute="top" secondItem="qqL-yz-fVe" secondAttribute="top" id="tgK-Y0-unX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qqL-yz-fVe"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="oMF-to-bja" id="3FZ-vJ-rAP"/>
+                        <outlet property="stackView" destination="0V5-CT-eaU" id="d9w-hQ-EPL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lS8-YB-gAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FoodLensBackground" width="1013" height="1735"/>
+    </resources>
+</document>

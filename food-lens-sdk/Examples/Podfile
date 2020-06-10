@@ -1,0 +1,20 @@
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:azumio/cocoa-pods-specs.git'
+
+platform :ios, '11.0'
+workspace '../FoodLensSDK'
+
+examples = ['AICamera', 'SearchFood', 'History', 'LocalHistory', 'RecognizeFood']
+
+abstract_target 'FoodLensExamples' do
+
+    examples.each_with_index { |example, index|
+        target example do
+            xcodeproj 'Example' + (index + 1).to_s + '_' + example + '/' + example + '.xcodeproj'
+        end
+    }
+
+    pod 'FoodLensSDK/Static'
+end
