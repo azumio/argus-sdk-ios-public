@@ -4,8 +4,8 @@ The framework for recognizing food
 
 ### More details here:
 
-<https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk>
+[food-lens-sdk](https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk)
 
 ### Examples:
 
-<https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk/Examples>
+[examples](https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk/Examples)
