@@ -7,7 +7,7 @@
 #
 
 pod_name = 'FoodLensSDKStatic'
-pod_version = '0.1.13'
+pod_version = '0.1.14'
 pod_description = 'FoodLens SDK as a prebuilt static library'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKStatic'
