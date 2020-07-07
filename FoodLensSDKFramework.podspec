@@ -7,18 +7,19 @@
 #
 
 pod_name = 'FoodLensSDKFramework'
-pod_version = '0.1.14'
+pod_version = '0.3.0'
 pod_description = 'FoodLens SDK as a prebuilt framework'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKFramework/FoodLensSDK.framework'
 pod_module_git_url = 'git@github.com:azumio/argus-sdk-ios-public.git'
 pod_tag_prefix = 'v'
-pod_home_page = 'https://github.com/azumio/argus-sdk-ios-public'
+pod_home_page = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
 pod_deployment_target = '11.0'
 pod_swift_version = '5.0'
 pod_frameworks = 'UIKit'
 pod_author = 'Vyacheslav Kuleshov'
 pod_author_email = 'slava@azumio.com'
+pod_dependencies = 'OpenUDID,Reachability'.split(",")
 
 
 Pod::Spec.new do |s|
@@ -43,6 +44,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = pod_module_root
 
   s.frameworks = pod_frameworks
+  for dependency in pod_dependencies
+    s.dependency dependency
+  end
 
   s.xcconfig = {
         'PREBUILD_POD_ROOT' => '$(PODS_ROOT)/' + pod_module_name,

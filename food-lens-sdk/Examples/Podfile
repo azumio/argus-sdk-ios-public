@@ -6,7 +6,7 @@ source 'git@github.com:azumio/cocoa-pods-specs.git'
 platform :ios, '11.0'
 workspace '../FoodLensSDK'
 
-examples = ['AICamera', 'SearchFood', 'History', 'LocalHistory', 'RecognizeFood']
+examples = ['AICamera', 'SearchFood', 'History', 'LocalHistory', 'RecognizeFood', 'AICameraWithCustomUI']
 
 abstract_target 'FoodLensExamples' do
 

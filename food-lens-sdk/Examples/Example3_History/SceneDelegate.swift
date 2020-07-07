@@ -39,12 +39,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, FoodLensDelegate, Switc
     func switchboardViewControllerDidSelect(_ viewController: SwitchboardViewController, option: SwitchboardViewController.Options) {
         switch option {
             case .camera:
-                let viewController = foodLens.instantiateCameraViewController()
+                let viewController = foodLens.instantiateCameraViewController(options: nil)
                 viewController.modalPresentationStyle = .fullScreen
                 window?.rootViewController?.present(viewController, animated: true) {}
             case .search:
                 let viewController = foodLens.instantiateFoodSearchViewController()
-                let navigationController = UINavigationController.foodNavigationController(withRootViewController: viewController)
+                let navigationController = UINavigationController.foodLensNavigationController(withRootViewController: viewController)
                 navigationController.modalPresentationStyle = .fullScreen
                 window?.rootViewController?.present(navigationController, animated: true) {}
             case .history:

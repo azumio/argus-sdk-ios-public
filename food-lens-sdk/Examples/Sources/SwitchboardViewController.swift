@@ -28,6 +28,8 @@ class SwitchboardViewController: UIViewController {
         static let history = Options(rawValue: 1 << 1)
         static let search = Options(rawValue: 1 << 2)
         static let recognize = Options(rawValue: 1 << 3)
+        static let result = Options(rawValue: 1 << 4)
+        static let viewResult = Options(rawValue: 1 << 5)
 
         public init(rawValue: Int) {self.rawValue = rawValue}
     }

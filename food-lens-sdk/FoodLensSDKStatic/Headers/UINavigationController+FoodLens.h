@@ -19,12 +19,12 @@
 
     @code
     let viewController = foodLens.instantiateFoodSearchViewController()
-    let navigationController = UINavigationController.foodNavigationController(withRootViewController: viewController)
+    let navigationController = UINavigationController.foodLensNavigationController(withRootViewController: viewController)
     navigationController.modalPresentationStyle = .fullScreen
     window?.rootViewController?.present(navigationController, animated: true) {}
     @endcode
 
     @param rootViewController A root view controller for the resulting navigation controller
  */
-+ (nonnull instancetype)foodNavigationControllerWithRootViewController:(nonnull UIViewController *)rootViewController;
++ (nonnull instancetype)foodLensNavigationControllerWithRootViewController:(nonnull UIViewController *)rootViewController;
 @end

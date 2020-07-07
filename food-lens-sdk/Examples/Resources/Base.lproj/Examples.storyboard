@@ -56,7 +56,7 @@
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0V5-CT-eaU">
-                                <rect key="frame" x="22" y="44" width="370" height="688"/>
+                                <rect key="frame" x="22" y="44" width="370" height="1040"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SL-6F-awC">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="160"/>
@@ -126,6 +126,40 @@
                                             <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="VDT-76-T5h"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-jJ-ALK">
+                                        <rect key="frame" x="0.0" y="704" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="50m-iA-qke"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="CHOOSE FROM LIBRARY"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="hD2-Op-AK6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-rK-hnn">
+                                        <rect key="frame" x="0.0" y="880" width="370" height="160"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.33516725349999998" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="8sC-ok-Ypt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                        <state key="normal" title="VIEW RESULT"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="optionTap:" destination="KKq-6p-Zd7" eventType="touchUpInside" id="GvM-rP-lwy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -151,6 +185,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lS8-YB-gAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="532" y="133"/>
+        </scene>
+        <!--Camera Exterior View Controller-->
+        <scene sceneID="nJS-eK-eme">
+            <objects>
+                <viewController storyboardIdentifier="CameraExteriorViewController" id="wy0-fE-n6y" customClass="CameraExteriorViewController" customModule="AICameraWithCustomUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mN3-VY-0AZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWs-fy-TwP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXy-IR-Sse" customClass="ChildrenTouchableView" customModule="AICameraWithCustomUI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3L-ac-Fhb">
+                                        <rect key="frame" x="188.5" y="44" width="37" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" title="🍒"/>
+                                        <connections>
+                                            <action selector="foodTap:" destination="wy0-fE-n6y" eventType="touchUpInside" id="OnV-3G-OnS"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RWe-lw-ou3">
+                                        <rect key="frame" x="20" y="810" width="374" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsy-l0-ePV">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="52"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="🥑"/>
+                                                <connections>
+                                                    <action selector="foodTap:" destination="wy0-fE-n6y" eventType="touchUpInside" id="T1p-9D-T0T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hom-Qd-L4g">
+                                                <rect key="frame" x="124.5" y="0.0" width="125" height="52"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="🍋"/>
+                                                <connections>
+                                                    <action selector="foodTap:" destination="wy0-fE-n6y" eventType="touchUpInside" id="I4d-EG-sbL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0v-mN-1KG">
+                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="52"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="🍌"/>
+                                                <connections>
+                                                    <action selector="foodTap:" destination="wy0-fE-n6y" eventType="touchUpInside" id="Lqh-MR-RRM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Z3L-ac-Fhb" firstAttribute="top" secondItem="kPI-Cf-ioL" secondAttribute="top" id="Tno-YV-3YE"/>
+                                    <constraint firstItem="kPI-Cf-ioL" firstAttribute="trailing" secondItem="RWe-lw-ou3" secondAttribute="trailing" constant="20" id="UPO-HW-3Fs"/>
+                                    <constraint firstItem="RWe-lw-ou3" firstAttribute="leading" secondItem="kPI-Cf-ioL" secondAttribute="leading" constant="20" id="o21-9Y-oOY"/>
+                                    <constraint firstItem="kPI-Cf-ioL" firstAttribute="bottom" secondItem="RWe-lw-ou3" secondAttribute="bottom" id="pLY-lx-mfW"/>
+                                    <constraint firstItem="Z3L-ac-Fhb" firstAttribute="centerX" secondItem="GXy-IR-Sse" secondAttribute="centerX" id="s0W-So-5HG"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="kPI-Cf-ioL"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zWs-fy-TwP" firstAttribute="leading" secondItem="mN3-VY-0AZ" secondAttribute="leading" id="53c-qa-slF"/>
+                            <constraint firstAttribute="bottom" secondItem="GXy-IR-Sse" secondAttribute="bottom" id="6KI-90-CCP"/>
+                            <constraint firstAttribute="trailing" secondItem="zWs-fy-TwP" secondAttribute="trailing" id="Ole-xG-jJa"/>
+                            <constraint firstAttribute="bottom" secondItem="zWs-fy-TwP" secondAttribute="bottom" id="XFi-0C-qdf"/>
+                            <constraint firstAttribute="trailing" secondItem="GXy-IR-Sse" secondAttribute="trailing" id="o70-Rr-43C"/>
+                            <constraint firstItem="GXy-IR-Sse" firstAttribute="top" secondItem="mN3-VY-0AZ" secondAttribute="top" id="pl7-bE-L69"/>
+                            <constraint firstItem="zWs-fy-TwP" firstAttribute="top" secondItem="mN3-VY-0AZ" secondAttribute="top" id="pzl-3O-lSt"/>
+                            <constraint firstItem="GXy-IR-Sse" firstAttribute="leading" secondItem="mN3-VY-0AZ" secondAttribute="leading" id="xxO-je-gAo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aPW-mE-jO4"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraContainerView" destination="zWs-fy-TwP" id="iNY-wY-08v"/>
+                        <outlet property="foodButton" destination="Z3L-ac-Fhb" id="p7I-np-QkP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MT-K6-ZB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="133"/>
         </scene>
     </scenes>
     <resources>

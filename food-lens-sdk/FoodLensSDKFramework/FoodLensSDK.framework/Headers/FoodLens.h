@@ -53,6 +53,19 @@
     @param viewController A view controller which is ready to delete data
  */
 - (void)foodLensDelete:(nonnull FoodLens *)foodLens foodCheckIn:(nonnull id<FoodLensFoodCheckIn>)foodCheckIn fromViewController:(nullable UIViewController *)viewController;
+
+@optional
+
+/**
+    This method is called by the CameraViewController to know how much to inset its controls relative to default
+    
+    Implementation can return non zero result in order to add some insets for controls. The freed space can be used for custom controls layouting.
+
+    @param foodLens The foodLens instance
+    @param cameraViewController A camera view controller which asks for insets
+ */
+- (UIEdgeInsets)foodLens:(nonnull FoodLens *)foodLens cameraViewControllerContentInset:(nonnull UIViewController *)cameraViewController;
+
 @end
 
 /**
@@ -161,10 +174,9 @@
     @endcode
     
     @param token An accessToken Should be received from the designated web services
-
-    @return Returns new authorized FoodLens instance.
+    @param completion A completion. Is called with either authorized FoodLens instance or error.
  */
-+ (nonnull instancetype)authorizedInstanceWithAccessToken:(nonnull NSString *)token;
++ (void)authorizedInstanceWithAccessToken:(nonnull NSString *)token completion:(nonnull void(^)(FoodLens *_Nullable foodLens, NSError *_Nullable error))completion;
 
 /**
     Returns new authorized FoodLens instance.
@@ -196,9 +208,39 @@
 
     Delegate is responsible for storing new data.
 
+    @param options Currently should be nil or empty
+
     @return Returns new view controller instance.
  */
-- (nonnull UIViewController *)instantiateCameraViewController;
+- (nonnull UIViewController *)instantiateCameraViewControllerWithOptions:(nullable NSDictionary *)options;
+
+
+/**
+    Instantiates result view controller.
+    
+    Allows to bypass camera screen and displays recognition result right away for the given image. User then can choose what food item it can actually log, what serving size, etc.
+    The controller can call data source to get existing data and calls delegate when it's sbout to finish food selection.
+
+    Delegate is responsible for storing new data.
+
+    @param image An image for which to show the result
+    @param options Currently should be nil or empty
+
+    @return Returns new view controller instance.
+ */
+- (nonnull UIViewController *)instantiateResultViewControllerForImage:(nonnull UIImage *)image withOptions:(nullable NSDictionary *)options NS_SWIFT_NAME(instantiateResultViewController(forImage:withOptions:));
+
+/**
+    Instantiates result view controller.
+    
+    Opens result view controller for previously confirmed food checkin. The result is opened in view only mode. As an options user then can either edit or delete it.
+    The delegate is notified about updated data and is responsible for storing it.
+
+    @param checkIn A checkin for which to show the result
+
+    @return Returns new view controller instance.
+ */
+- (nonnull UIViewController *)instantiateResultViewControllerForCheckIn:(nonnull id<FoodLensFoodCheckIn>)checkIn NS_SWIFT_NAME(instantiateResultViewController(forCheckIn:));
 
 /**
     Instantiates history view controller.
@@ -223,6 +265,7 @@
     Delegate is responsible for storing new data.
  */
 - (nonnull UIViewController *)instantiateFoodSearchViewController;
+
 
 /**
     UI less method for the food recognition.

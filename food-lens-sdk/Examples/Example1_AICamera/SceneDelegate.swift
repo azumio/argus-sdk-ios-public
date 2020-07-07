@@ -49,7 +49,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, FoodLensDelegate {
     private func login(withFoodLens foodLens: FoodLens) {
         self.foodLens = foodLens
         foodLens.delegate = self
-        window?.rootViewController = foodLens.instantiateCameraViewController()
+        window?.rootViewController = foodLens.instantiateCameraViewController(options: nil)
         window?.rootViewController?.navigationItem.hidesBackButton = true
     }
 }

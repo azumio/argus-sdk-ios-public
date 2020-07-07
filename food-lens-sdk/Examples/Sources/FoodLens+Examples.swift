@@ -35,7 +35,7 @@ extension FoodLens {
         var error: Error
     }
 
-    class func authorizedInstance(_ completion: @escaping (FoodLens?, NSError?) -> Void) {
+    class func authorizedInstance(_ completion: @escaping (FoodLens?, Error?) -> Void) {
         let userId = UUID().uuidString
         var request = URLRequest(url: Self.endpoint.appendingPathComponent("api2/token"))
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -47,9 +47,10 @@ extension FoodLens {
             if let data = responseData {
                 do {
                     let response = try JSONDecoder().decode(TokenResponse.self, from: data)
-                    let foodLens = FoodLens.authorizedInstance(withAccessToken: response.access_token)
-                    DispatchQueue.main.async {
-                        completion(foodLens, nil)
+                    FoodLens.authorizedInstance(withAccessToken: response.access_token) { (foodLens, error) in
+                        DispatchQueue.main.async {
+                            completion(foodLens, error)
+                        }
                     }
                 } catch (let e) {
                     do {

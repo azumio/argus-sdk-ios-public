@@ -143,7 +143,7 @@ foodLens.recognizeFood(image) { (segments, error) in
 
 #### Camera view controller
 
-Camera view controller helps to make food photo and display result.
+The camera view controller helps to make food photo, display and confirm results.
 
 ```
 foodLens.instantiateCameraViewController()
@@ -151,19 +151,37 @@ foodLens.instantiateCameraViewController()
 
 #### Search food view controller
 
-Search food view controller allows to search for food.
+The search food view controller allows to search for food.
 
 ```
 foodLens.instantiateFoodSearchViewController()
 ```
 
 
-#### Search food view controller
+#### History view
 
-Search food view controller allows to search for food.
+The history view controller allows to browse entire food history 
 
 ```
-foodLens.instantiateFoodSearchViewController()
+foodLens.instantiateHistoryViewController()
+```
+
+
+#### Confirm food recognition result
+
+The edit view controller allows to edit and confirm food recognition results for the given image.
+
+```
+foodLens.instantiateResultViewController(forImage: image)
+```
+
+
+#### View food recognition result
+
+The view controller allows to view, edit, delete and confirm previously confirmed food checkins.
+
+```
+foodLens.instantiateResultViewController(forCheckIn: checkIn)
 ```
 
 
@@ -198,6 +216,17 @@ Demonstrates how to create your own data source on example of locally stored his
 
 Demonstrates how to use UI less food recognition method for getting food on the picture from the library 
 
+#### :hammer_and_wrench: AICameraWithCustomUI
+
+Demonstrates how to add custom controls inside camera view controller 
+
+#### :hammer_and_wrench: ResultFromPictureLibrary
+
+Demonstrates how to present edit screen for the food recognition result for the given UIImage bypassing camera screen 
+
+#### :hammer_and_wrench: AICameraAndViewResult
+
+Demonstrates how to view, edit and delete previously confirmed food checkins  
 
 
 ## License
