@@ -1,8 +1,9 @@
 # FoodLens SDK
 
-The framework for recognizing food
+Food nutrition from photos. SDK for iOS.
+Get your key at https://dev.caloriemama.ai/
 
-### More details here:
+### SDK Use details:
 
 [food-lens-sdk](https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk)
 
