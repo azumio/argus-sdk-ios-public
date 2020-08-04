@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoodLensSDK'
-  s.version          = '0.3.0'
+  s.version          = '0.3.8'
   s.summary          = 'FoodLens SDK as a prebuilt framework'
   s.description      = 'FoodLens SDK as a prebuilt framework'
 

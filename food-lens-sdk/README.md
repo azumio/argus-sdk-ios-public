@@ -32,7 +32,12 @@ pod 'FoodLensSDK/Static'
 For the first time launch you have to obtain access token from the designated web services. And start the SDK like 
 
 ```
-let foodLens = FoodLens.authorizedInstance(withAccessToken: access_token)
+FoodLens.authorizedInstance(withAccessToken: access_token) { (foodLens, error) in
+    if let foodLens = foodLens {
+        ...
+    }
+    else ...
+}
 ```
 
 Next time you have to obtain the last authorized instance. The instance is preserved between app launches
@@ -112,9 +117,13 @@ let task = urlSession.uploadTask(with: request, from: try! JSONEncoder().encode(
     if let data = responseData {
         do {
             let response = try JSONDecoder().decode(TokenResponse.self, from: data)
-            let foodLens = FoodLens.authorizedInstance(withAccessToken: response.access_token)
-
-            // Start working with FoodLens
+            FoodLens.authorizedInstance(withAccessToken: access_token) { (foodLens, error) in
+                if let foodLens = foodLens {
+                    ...
+                    // Start working with FoodLens
+                }
+                else ...
+            }
             ...
         } catch (let e) {
             ...

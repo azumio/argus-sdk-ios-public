@@ -160,9 +160,12 @@
         if let data = responseData {
             do {
                 let response = try JSONDecoder().decode(TokenResponse.self, from: data)
-                let foodLens = FoodLens.authorizedInstance(withAccessToken: response.access_token)
-
-                // Start working with FoodLens
+                FoodLens.authorizedInstance(withAccessToken: response.access_token) { (foodLens, error) in
+                    if let foodLens = foodLens {
+                        // Start working with FoodLens
+                    }
+                    else ...
+                }
                 ...
             } catch (let e) {
                 ...
