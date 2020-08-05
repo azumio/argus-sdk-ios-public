@@ -10,7 +10,7 @@ import FoodLensSDK
 
 extension FoodLens {
 
-    static let endpoint = URL(string: "https://testjwt-dot-default-dot-azumio-com.appspot.com")!
+    static let endpoint = URL(string: "https://api.foodlens.com")!
     static let clientId = "3ffbd6d5"
     static let clientSecret = "7a5514e8b163c984a7bc0c69c5483161"
 
