@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoodLensSDK'
-  s.version          = '0.3.12'
+  s.version          = '0.3.13'
   s.summary          = 'FoodLens SDK as a prebuilt framework'
   s.description      = 'FoodLens SDK as a prebuilt framework'
 
   s.homepage         = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
-  s.license          = { :type => 'Azumio Developer License', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vyacheslav Kuleshov' => 'slava@azumio.com' }
   s.source           = { :git => 'git@github.com:azumio/argus-sdk-ios-public.git', :tag => 'v' + s.version.to_s  }
 

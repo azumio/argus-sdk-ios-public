@@ -7,7 +7,7 @@
 #
 
 pod_name = 'FoodLensSDKFramework'
-pod_version = '0.3.12'
+pod_version = '0.3.13'
 pod_description = 'FoodLens SDK as a prebuilt framework'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKFramework/FoodLensSDK.framework'
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.description      = pod_description
 
   s.homepage         = pod_home_page
-  s.license          = { :type => 'Azumio Developer License', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { pod_author => pod_author_email }
   s.source           = { :git => pod_module_git_url, :tag => pod_tag_prefix + s.version.to_s }
 
