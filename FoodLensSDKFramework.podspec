@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.description      = pod_description
 
   s.homepage         = pod_home_page
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Azumio Developer License', :file => 'LICENSE' }
   s.author           = { pod_author => pod_author_email }
   s.source           = { :git => pod_module_git_url, :tag => pod_tag_prefix + s.version.to_s }
 
