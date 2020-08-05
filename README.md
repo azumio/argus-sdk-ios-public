@@ -9,4 +9,8 @@ Get your key at https://dev.caloriemama.ai/
 
 ### Examples:
 
-[examples](https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk/Examples)
+
+[Simple example](https://github.com/azumio/foodlens-sdk-ios-example1)
+
+[Various examples](https://github.com/azumio/argus-sdk-ios-public/tree/master/food-lens-sdk/Examples)
+

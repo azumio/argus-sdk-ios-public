@@ -17,8 +17,8 @@ pod_home_page = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
 pod_deployment_target = '11.0'
 pod_swift_version = '5.0'
 pod_frameworks = 'UIKit'
-pod_author = 'Vyacheslav Kuleshov'
-pod_author_email = 'slava@azumio.com'
+pod_author = 'Azumio Inc.'
+pod_author_email = 'info@azumio.com'
 pod_dependencies = 'OpenUDID,Reachability'.split(",")
 
 
