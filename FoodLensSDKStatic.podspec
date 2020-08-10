@@ -7,18 +7,18 @@
 #
 
 pod_name = 'FoodLensSDKStatic'
-pod_version = '0.3.13'
+pod_version = '0.3.15'
 pod_description = 'FoodLens SDK as a prebuilt static library'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKStatic'
-pod_module_git_url = 'git@github.com:azumio/argus-sdk-ios-public.git'
+pod_module_git_url = 'https://github.com/azumio/argus-sdk-ios-public.git'
 pod_tag_prefix = 'v'
 pod_home_page = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
 pod_deployment_target = '11.0'
 pod_swift_version = '5.0'
 pod_frameworks = 'UIKit'
-pod_author = 'Vyacheslav Kuleshov'
-pod_author_email = 'slava@azumio.com'
+pod_author = 'Azumio Inc.'
+pod_author_email = 'info@azumio.com'
 pod_dependencies = 'OpenUDID,Reachability'.split(",")
 
 
