@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Examples">
+      <FileRef
+         location = "group:Example1_AICamera/AICamera.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example2_SearchFood/SearchFood.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example3_History/History.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example4_LocalHistory/LocalHistory.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example5_RecognizeFood/RecognizeFood.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example6_AICameraWithCustomUI/AICameraWithCustomUI.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example7_ResultFromPictureLibrary/ResultFromPictureLibrary.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Example8_AICameraAndViewResult/AICameraAndViewResult.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
