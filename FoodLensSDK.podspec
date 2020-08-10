@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'FoodLensSDK'
   s.version          = '0.3.15'
-  s.summary          = 'FoodLens SDK as a prebuilt framework'
-  s.description      = 'FoodLens SDK as a prebuilt framework'
+  s.summary          = 'FoodLens SDK'
+  s.description      = 'FoodLens SDK'
 
   s.homepage         = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
   s.license          = { :type => 'Azumio Developer License', :file => 'LICENSE' }
