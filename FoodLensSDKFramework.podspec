@@ -7,7 +7,7 @@
 #
 
 pod_name = 'FoodLensSDKFramework'
-pod_version = '0.3.15'
+pod_version = '0.3.16'
 pod_description = 'FoodLens SDK as a prebuilt framework'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKFramework/FoodLensSDK.framework'

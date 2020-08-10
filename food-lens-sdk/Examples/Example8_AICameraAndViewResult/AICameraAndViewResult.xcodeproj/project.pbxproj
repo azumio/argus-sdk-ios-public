@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9DA54F995CAC263A5520E85 /* Pods_FoodLensExamples_ResultFromPictureLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B2A64EC3E0DCC8B0D8BAF3 /* Pods_FoodLensExamples_ResultFromPictureLibrary.framework */; };
+		59A58EC10355621571F77842 /* Pods_FoodLensExamples_AICameraAndViewResult.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A116160224575ADFE9A9E03 /* Pods_FoodLensExamples_AICameraAndViewResult.framework */; };
 		EEB1BD2024757DB90018508D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1BD1924757DB90018508D /* SceneDelegate.swift */; };
 		EEB1BD2224757DB90018508D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1BD1D24757DB90018508D /* AppDelegate.swift */; };
 		EEB1BD2A24757DE70018508D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB1BD2824757DE70018508D /* Assets.xcassets */; };
@@ -33,14 +33,15 @@
 
 /* Begin PBXFileReference section */
 		056085141ACCCBAC13F16C87 /* Pods-FoodLensExamples-ResultFromPictureLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-ResultFromPictureLibrary.release.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-ResultFromPictureLibrary/Pods-FoodLensExamples-ResultFromPictureLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		0AE4F0E268515C50EF914547 /* Pods-FoodLensExamples-AICameraAndViewResult.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-AICameraAndViewResult.release.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-AICameraAndViewResult/Pods-FoodLensExamples-AICameraAndViewResult.release.xcconfig"; sourceTree = "<group>"; };
 		27289ED2CA73E6F12B022A86 /* Pods-FoodLensExamples-SearchFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-SearchFood.debug.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-SearchFood/Pods-FoodLensExamples-SearchFood.debug.xcconfig"; sourceTree = "<group>"; };
 		66F0FBA7834CFD4125D7116D /* Pods-FoodLensExamples-AICamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-AICamera.release.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-AICamera/Pods-FoodLensExamples-AICamera.release.xcconfig"; sourceTree = "<group>"; };
 		6DB953A72F6B9A52B543A1D1 /* Pods-FoodLensExamples-RecognizeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-RecognizeFood.release.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-RecognizeFood/Pods-FoodLensExamples-RecognizeFood.release.xcconfig"; sourceTree = "<group>"; };
 		77855201FA86E56CC5F7FD7D /* Pods-FoodLensExamples-AICamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-AICamera.debug.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-AICamera/Pods-FoodLensExamples-AICamera.debug.xcconfig"; sourceTree = "<group>"; };
 		7C12E42A996049DB4BB9C382 /* Pods-FoodLensExamples-SearchFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-SearchFood.release.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-SearchFood/Pods-FoodLensExamples-SearchFood.release.xcconfig"; sourceTree = "<group>"; };
+		8A116160224575ADFE9A9E03 /* Pods_FoodLensExamples_AICameraAndViewResult.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodLensExamples_AICameraAndViewResult.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70D32840708D22182A07012 /* Pods-FoodLensExamples-RecognizeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-RecognizeFood.debug.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-RecognizeFood/Pods-FoodLensExamples-RecognizeFood.debug.xcconfig"; sourceTree = "<group>"; };
 		BC518D48448453523ADC5467 /* Pods-FoodLensExamples-ResultFromPictureLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-ResultFromPictureLibrary.debug.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-ResultFromPictureLibrary/Pods-FoodLensExamples-ResultFromPictureLibrary.debug.xcconfig"; sourceTree = "<group>"; };
-		E9B2A64EC3E0DCC8B0D8BAF3 /* Pods_FoodLensExamples_ResultFromPictureLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodLensExamples_ResultFromPictureLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8C62122459F2FE00C01F34 /* AICameraAndViewResult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AICameraAndViewResult.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB1BD1924757DB90018508D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EEB1BD1D24757DB90018508D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		EEB1BD372475C7C20018508D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Resources/Base.lproj/Examples.storyboard; sourceTree = "<group>"; };
 		EEB1BD392475C83A0018508D /* FoodLens+Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FoodLens+Examples.swift"; path = "../Sources/FoodLens+Examples.swift"; sourceTree = "<group>"; };
 		EEB1BD3B2475CA0F0018508D /* SwitchboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchboardViewController.swift; path = ../Sources/SwitchboardViewController.swift; sourceTree = "<group>"; };
+		F54F538FD9D4FAE830B1DA97 /* Pods-FoodLensExamples-AICameraAndViewResult.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodLensExamples-AICameraAndViewResult.debug.xcconfig"; path = "Target Support Files/Pods-FoodLensExamples-AICameraAndViewResult/Pods-FoodLensExamples-AICameraAndViewResult.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9DA54F995CAC263A5520E85 /* Pods_FoodLensExamples_ResultFromPictureLibrary.framework in Frameworks */,
+				59A58EC10355621571F77842 /* Pods_FoodLensExamples_AICameraAndViewResult.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +78,8 @@
 				6DB953A72F6B9A52B543A1D1 /* Pods-FoodLensExamples-RecognizeFood.release.xcconfig */,
 				BC518D48448453523ADC5467 /* Pods-FoodLensExamples-ResultFromPictureLibrary.debug.xcconfig */,
 				056085141ACCCBAC13F16C87 /* Pods-FoodLensExamples-ResultFromPictureLibrary.release.xcconfig */,
+				F54F538FD9D4FAE830B1DA97 /* Pods-FoodLensExamples-AICameraAndViewResult.debug.xcconfig */,
+				0AE4F0E268515C50EF914547 /* Pods-FoodLensExamples-AICameraAndViewResult.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -110,7 +114,7 @@
 		EE78528C23191D42002B034C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9B2A64EC3E0DCC8B0D8BAF3 /* Pods_FoodLensExamples_ResultFromPictureLibrary.framework */,
+				8A116160224575ADFE9A9E03 /* Pods_FoodLensExamples_AICameraAndViewResult.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,7 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodLensExamples-ResultFromPictureLibrary/Pods-FoodLensExamples-ResultFromPictureLibrary-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodLensExamples-AICameraAndViewResult/Pods-FoodLensExamples-AICameraAndViewResult-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BD12E6D03E8CA3A6993214B /* [CP] Check Pods Manifest.lock */ = {
@@ -216,7 +220,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FoodLensExamples-ResultFromPictureLibrary-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FoodLensExamples-AICameraAndViewResult-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,7 +374,7 @@
 		};
 		EE8C62232459F30000C01F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC518D48448453523ADC5467 /* Pods-FoodLensExamples-ResultFromPictureLibrary.debug.xcconfig */;
+			baseConfigurationReference = F54F538FD9D4FAE830B1DA97 /* Pods-FoodLensExamples-AICameraAndViewResult.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -392,7 +396,7 @@
 		};
 		EE8C62242459F30000C01F34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 056085141ACCCBAC13F16C87 /* Pods-FoodLensExamples-ResultFromPictureLibrary.release.xcconfig */;
+			baseConfigurationReference = 0AE4F0E268515C50EF914547 /* Pods-FoodLensExamples-AICameraAndViewResult.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
