@@ -237,11 +237,6 @@ Demonstrates how to present edit screen for the food recognition result for the 
 
 Demonstrates how to view, edit and delete previously confirmed food checkins  
 
-
-## License
-
-TBD
-
 ## Copyright
 
-Copyright © 2020 Azumio Inc. All rights reserved.
+Copyright © 2022 Azumio Inc. All rights reserved.
