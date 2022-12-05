@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoodLensSDK'
-  s.version          = '0.3.16'
+  s.version          = '0.3.17'
   s.summary          = 'FoodLens SDK as a prebuilt framework'
   s.description      = 'FoodLens SDK as a prebuilt framework'
 
@@ -24,11 +24,11 @@ Pod::Spec.new do |s|
   s.module_name = 'FoodLensSDK'
 
   s.subspec 'Static' do |subs|
-      subs.dependency 'FoodLensSDKStatic'
+      subs.dependency 'FoodLensSDKXCFrameworkStatic'
   end
 
   s.subspec 'Framework' do |subs|
-      subs.dependency 'FoodLensSDKFramework'
+      subs.dependency 'FoodLensSDKXCFramework'
   end
 
   s.default_subspecs = 'Static'

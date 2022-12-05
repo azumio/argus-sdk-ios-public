@@ -29,4 +29,7 @@
          location = "group:Example8_AICameraAndViewResult/AICameraAndViewResult.xcodeproj">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
