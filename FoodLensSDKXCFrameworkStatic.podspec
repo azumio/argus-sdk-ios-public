@@ -7,14 +7,14 @@
 #
 
 pod_name = 'FoodLensSDKXCFrameworkStatic'
-pod_version = '0.3.17'
+pod_version = '0.3.18'
 pod_description = 'FoodLens SDK as a prebuilt static xcframework'
 pod_module_name = 'FoodLensSDK'
 pod_module_root = 'food-lens-sdk/FoodLensSDKXCFrameworkStatic/FoodLensSDK.xcframework'
 pod_module_git_url = 'https://github.com/azumio/argus-sdk-ios-public.git'
 pod_tag_prefix = 'v'
 pod_home_page = 'https://github.com/azumio/argus-sdk-ios-public/food-lens-sdk'
-pod_deployment_target = '11.0'
+pod_deployment_target = '13.0'
 pod_swift_version = '5.0'
 pod_frameworks = 'UIKit'
 pod_author = 'Azumio Inc.'

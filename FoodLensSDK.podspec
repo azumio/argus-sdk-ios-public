@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FoodLensSDK'
-  s.version          = '0.3.17'
+  s.version          = '0.3.18'
   s.summary          = 'FoodLens SDK as a prebuilt framework'
   s.description      = 'FoodLens SDK as a prebuilt framework'
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Azumio Inc.' => 'info@azumio.com' }
   s.source           = { :git => 'https://github.com/azumio/argus-sdk-ios-public.git', :tag => 'v' + s.version.to_s  }
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   s.requires_arc = true
   s.swift_versions = '5.0'
 
